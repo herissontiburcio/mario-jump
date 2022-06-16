@@ -1,6 +1,8 @@
 const mario = document.querySelector(".mario");
 const pipe = document.querySelector(".pipe");
 
+const refreshButton = document.querySelector(".refresh");
+
 const jump = () => {
   mario.classList.add("jump");
 
@@ -31,3 +33,7 @@ const loop = setInterval(() => {
 }, 10);
 
 document.addEventListener("keydown", jump);
+
+refreshButton.addEventListener("click", function () {
+  location.reload();
+});
